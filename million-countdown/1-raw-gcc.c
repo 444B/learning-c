@@ -11,4 +11,7 @@ int main() {
 
     return 0;
 }
-// running this with cc million-countdown.c -o million-countdown
+// gcc 1-raw-gcc.c -o 1-raw-gcc.out
+// real    0m49.411s
+// user    0m0.368s
+// sys     0m2.142s
