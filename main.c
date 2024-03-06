@@ -2,16 +2,12 @@
 
 #include <stdio.h>
 
-void countDown(int n) {
-    if (n == 0) {
-        printf("Blastoff!\n");
-    } else {
-        printf("%d\n", n);
-        countDown(n - 1);
-    }
-}
+
 
 int main() {
-    countDown(10);
+    int numbers[] = {2, 3, 4, 10, 40};
+    int size = sizeof(numbers) / sizeof(numbers[0]);
+    printf("Size: %d\n", size);
+
     return 0;
 }   
