@@ -29,8 +29,32 @@ int main() {
         for (int i=0; i < 2; i++){
             printf("Integer value of array[%d] = %d\n", i, array[i]);
             printf("Binary value of array[%d] = ", i);
-            printBinary(i);
+            printBinary(array[i]);
+            printf("Starting Address = %p, Ending Address = %p\n",
+                (void*)&array[i], (void*)((char*)&array[i] + sizeof(int) - 1));
+            putchar('\n');
+            // Starting Address = 0x56554cc84018, Ending Address = 0x56554cc8401b
         }
+
+
+        // get the new value in array element 0
+        printf("Enter an integer: ");
+        scanf("%d", &array[0]);
+
+
+
+        // loop through again, with new value
+        for (int i=0; i < 2; i++){
+            printf("Integer value of array[%d] = %d\n", i, array[i]);
+            printf("Binary value of array[%d] = ", i);
+            printBinary(array[i]);
+            printf("Starting Address = %p, Ending Address = %p\n",
+                (void*)&array[i], (void*)((char*)&array[i] + sizeof(int) - 1));
+            putchar('\n');
+            // Starting Address = 0x56554cc8401c, Ending Address = 0x56554cc8401f
+        }
+        
+
 
 
     return 0;
