@@ -1,5 +1,3 @@
-// recursion example by counting down from 10 to 1
-
 #include <stdio.h>
 
 void countDown(int n) {
@@ -12,6 +10,6 @@ void countDown(int n) {
 }
 
 int main() {
-    countDown(10);
+    countDown(1000000);
     return 0;
 }   

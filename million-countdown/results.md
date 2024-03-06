@@ -17,3 +17,8 @@
 // real    0m0.012s
 // user    0m0.004s
 // sys     0m0.000s
+
+// gcc 4-recusion.c && time ./a.out
+// real    0m0.022s
+// user    0m0.000s
+// sys     0m0.010s
